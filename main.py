@@ -7,9 +7,8 @@ def get_number_of_words(text):
     return len(words)
 
 def get_number_of_character_appearance(text):
-    words = text.split()
     characters = {}
-    for word in words:
+    for word in text:
         lowered_word = word.lower()
         for char in lowered_word:
             if(char not in characters):
